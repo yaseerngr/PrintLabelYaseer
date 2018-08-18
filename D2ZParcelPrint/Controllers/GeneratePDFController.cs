@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace NeoPrintLabel.Controllers
+namespace D2ZParcelPrint.Controllers
 {
     public class GeneratePDFController : ApiController
     {
