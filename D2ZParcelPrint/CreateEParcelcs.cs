@@ -671,13 +671,13 @@ namespace D2ZParcelPrint
             ThermalLabel.LicenseOwner = "D2Z Pty Ltd-Ultimate Edition-Developer License";
             ThermalLabel.LicenseKey = "EZJ6Y5A877F82CA6MXBYBWU3S3S54QVVL4MW39RN24LZLCP6GE2A";
 
-            //ImageItem nbdaLogo = new ImageItem(0.03, 0.01);
-            //nbdaLogo.SourceFile = "dfdf";
-            //nbdaLogo.Width = 4;
-            //nbdaLogo.LockAspectRatio = LockAspectRatio.WidthBased;
-            //nbdaLogo.MonochromeSettings.DitherMethod = DitherMethod.Threshold;
-            //nbdaLogo.MonochromeSettings.Threshold = 50;
-            //nbdaLogo.MonochromeSettings.ReverseEffect = false;
+            ImageItem nbdaLogo = new ImageItem(0.03, 0.01);
+            nbdaLogo.SourceFile = @"C:\Yaseer\Technology\dot net\D2Z project files\Images\eParcel.jpg";
+            nbdaLogo.Width = 4;
+            nbdaLogo.LockAspectRatio = LockAspectRatio.WidthBased;
+            nbdaLogo.MonochromeSettings.DitherMethod = DitherMethod.Threshold;
+            nbdaLogo.MonochromeSettings.Threshold = 50;
+            nbdaLogo.MonochromeSettings.ReverseEffect = false;
 
             BarcodeItem qritem = new BarcodeItem(3, 1.15, 0.7, 0.7, BarcodeSymbology.DataMatrix, "0123456789ABCDEF");
             qritem.DisplayCode = false;
@@ -1026,7 +1026,7 @@ namespace D2ZParcelPrint
             txt13_212.Orientation = LineOrientation.Vertical;
             txt13_212.StrokeThickness = 0.015;
 
-            // tLabel.Items.Add(nbdaLogo);
+            tLabel.Items.Add(nbdaLogo);
             tLabel.Items.Add(postpaid);
             tLabel.Items.Add(qritem);
             tLabel.Items.Add(txt1);

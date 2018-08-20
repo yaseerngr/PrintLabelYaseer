@@ -1,4 +1,5 @@
-﻿using System;
+﻿using D2ZParcelPrint.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,8 +10,8 @@ namespace D2ZParcelPrint.Controllers
 {
     public class GeneratePDFController : ApiController
     {
-        [HttpGet]
-        public HttpResponseMessage GetPdf()
+        [HttpGet]//[HttpPost]
+        public HttpResponseMessage GetPdf([FromBody] Label label)
         {
             var ep = new CreateEParcelcs();
 
