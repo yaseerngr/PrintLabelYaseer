@@ -21,8 +21,7 @@ namespace D2ZParcelPrint
             ThermalLabel tLabel = new ThermalLabel(Neodynamic.SDK.Printing.UnitType.Inch, 4, 6);
             ThermalLabel tLabel2 = new ThermalLabel(Neodynamic.SDK.Printing.UnitType.Inch, 4, 6);
 
-            //ThermalLabel.LicenseOwner = "D2Z Pty Ltd-Ultimate Edition-Developer License";
-            //ThermalLabel.LicenseKey = "EZJ6Y5A877F82CA6MXBYBWU3S3S54QVVL4MW39RN24LZLCP6GE2A";
+        
 
             //ImageItem nbdaLogo = new ImageItem(0.03, 0.01);
             //nbdaLogo.SourceFile = "dfdf";
@@ -562,9 +561,7 @@ namespace D2ZParcelPrint
             ThermalLabel tLabel = new ThermalLabel(UnitType.Inch, 4, 6);
             
 
-            //ThermalLabel.LicenseOwner = "D2Z Pty Ltd-Ultimate Edition-Developer License";
-            //ThermalLabel.LicenseKey = "EZJ6Y5A877F82CA6MXBYBWU3S3S54QVVL4MW39RN24LZLCP6GE2A";
-
+          
            
 
             BarcodeItem qritem = new BarcodeItem(3, 1.15, 0.7, 0.7, BarcodeSymbology.DataMatrix, "0123456789ABCDEF");
@@ -668,8 +665,7 @@ namespace D2ZParcelPrint
             ThermalLabel tLabel = new ThermalLabel(Neodynamic.SDK.Printing.UnitType.Inch, 4, 6);
             //ThermalLabel tLabel2 = new ThermalLabel(Neodynamic.SDK.Printing.UnitType.Inch, 4, 6);
 
-            ThermalLabel.LicenseOwner = "D2Z Pty Ltd-Ultimate Edition-Developer License";
-            ThermalLabel.LicenseKey = "EZJ6Y5A877F82CA6MXBYBWU3S3S54QVVL4MW39RN24LZLCP6GE2A";
+         
 
             ImageItem nbdaLogo = new ImageItem(0.03, 0.01);
             nbdaLogo.SourceFile = @"C:\Yaseer\Technology\dot net\D2Z project files\Images\eParcel.jpg";
