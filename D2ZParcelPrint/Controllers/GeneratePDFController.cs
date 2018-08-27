@@ -10,12 +10,22 @@ namespace D2ZParcelPrint.Controllers
 {
     public class GeneratePDFController : ApiController
     {
+        
         [HttpGet]//[HttpPost]
-        public HttpResponseMessage GetPdf([FromBody] Label label)
+        public HttpResponseMessage GetPdf()
+
         {
             var ep = new CreateEParcelcs();
 
             return ep.PdfWithhardcodedValue();
+        }
+
+        [HttpPost]
+        public HttpResponseMessage GetPdf([FromBody] Label label)
+        {
+            var ep = new CreateEParcelcs();
+
+            return ep.GetDPF(label);
         }
     }
 }

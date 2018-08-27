@@ -85,8 +85,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="eParcel.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\eParcel.jpeg" />
+    <Content Include="Images\eParcel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
